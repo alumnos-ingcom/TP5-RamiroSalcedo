@@ -4,20 +4,24 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-def fibonacci(numero):
+def tribonacci(numero):
     
     variable1 = 0
     variable2 = 1
+    variable3 = 1
     
-    if numero > 2:
+    if numero > 3:
         
         for i in range(numero):
             
-            resultado = variable1 + variable2
+            resultado = variable1 + variable2 + variable3
             
             variable1 = variable2
             
-            variable2 = resultado
+            variable2 = variable3
+            
+            variable3 = resultado
+            
             
             numero = numero + 1
             
@@ -27,9 +31,9 @@ def fibonacci(numero):
 
 
 def prueba():
-    numero = int(input("Ingrese el n-esimo numero de la serie de fibonacci que quiere saber: "))
-    variable = fibonacci(numero)
-    print(f"El {numero} numero de la serie de fibonacci es {variable}")
+    numero = int(input("Ingrese el n-esimo numero de la serie de tribonacci que quiere saber: "))
+    variable = tribonacci(numero)
+    print(f"El {numero} numero de la serie de tribonacci es {variable}")
     
 
 
