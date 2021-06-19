@@ -23,7 +23,7 @@ def tribonacci(numero):
             variable3 = resultado
             
             
-            numero = numero + 1
+            
             
     return resultado
 

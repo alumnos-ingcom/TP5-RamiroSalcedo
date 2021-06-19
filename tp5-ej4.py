@@ -18,23 +18,14 @@ def numero_perfecto(numero):
     condicion = suma == numero
         
         
-    if condicion == True:
-        
-        print(f"{numero} es un numero perfecto")
-        
-        
-    else:
-        
-        print(f"{numero} no es un numero perfecto")
-        condicion = False
         
     return condicion
             
     
 def prueba():
     numero = int(input("Ingrese un numero entero positivo: "))
-    numero_perfecto(numero)
-    
+    condicion = numero_perfecto(numero)
+    print(f"{numero} es un numero perfecto?: {condicion}")
     
 if __name__ == "__main__":
     prueba()
