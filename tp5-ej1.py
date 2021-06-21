@@ -7,28 +7,36 @@
 def funcion_pares(numero):
     
     
-    if numero % 2 == 0:
+    resultado = numero / 2
+    coma = 0.99999
+    condicion = resultado + coma
+    
+    condicion2 = int(resultado) + 1
+    
+    
+    
+    if condicion2 < condicion:
         
-        variable = True
-        
-    else:
-        
-        variable = False
-        
-        
-    return variable
+        return False
+    
+    elif condicion2 > condicion:
+
+        return True
+    
+          
+    
         
         
 
 
 def prueba():
     
-    funcion_pares(2)
+    numero = int(input("ingrese un valor numerico: "))
 
-    resultado = funcion_pares(3)
+    resultado = funcion_pares(numero)
 
     print(resultado)
-    pass
+    
 
 if __name__ == "__main__":
     prueba()
